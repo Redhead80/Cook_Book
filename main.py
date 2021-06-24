@@ -24,19 +24,6 @@ def dict_collector(file_path):
 dict_collector('dishes_list.txt')
 
 def get_shop_list_by_dishes(dishes, persons=int):
-    '''Нужно написать функцию, которая на вход принимает список блюд
-    из cook_book и количество персон для кого мы будем готовить
-    На выходе мы должны получить словарь с названием ингредиентов и его количества для блюда. Например, для такого вызова
-    get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2)
-    {
-  'Картофель': {'measure': 'кг', 'quantity': 2},
-  'Молоко': {'measure': 'мл', 'quantity': 200},
-  'Помидор': {'measure': 'шт', 'quantity': 4},
-  'Сыр гауда': {'measure': 'г', 'quantity': 200},
-  'Яйцо': {'measure': 'шт', 'quantity': 4},
-  'Чеснок': {'measure': 'зубч', 'quantity': 6}
-}
-    '''
     menu = dict_collector('dishes_list.txt')
     print('Наше меню выглядит вот так:')
     pprint(menu)
@@ -60,4 +47,4 @@ def get_shop_list_by_dishes(dishes, persons=int):
         print("Вы ошиблись в названии блюда, проверьте ввод")
 
 
-get_shop_list_by_dishes(['Омлет','Запечённый картофель', 'Фахитос'], 6)
+get_shop_list_by_dishes(['Омлет', 'Запечённый картофель', 'Фахитос'], 6)
